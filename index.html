@@ -6,7 +6,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
 <link href="./font/Renner__Book/stylesheet.css" rel="stylesheet">
 
-<title>SHIRAYAMAMUSICVILLAGE</title>
+<title>SHIRAYAMA MUSIC VILLAGE</title>
 <style>
 body {
   background-color: white;
@@ -15,10 +15,45 @@ body {
   font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
   color: #4d4d4d;
 }
-#titleimg {
-  width: 90vw;
-  max-width: 600px;
+#title {
   display: inline-block;
+  max-width: 800px;
+  text-align: left;
+  margin: 0 1em;
+}
+#title #titleimg1 {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5%;
+  width: 40%;
+}
+#title #titleimg2 {
+  display: inline-block;
+  top: 0%;
+  width: 55%;
+}
+#title > div {
+  display: inline-block;
+  position: relative;
+  margin-top: -5%;
+  text-align: left;
+}
+#title .lead {
+  font-size: 50%;
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+#title .date {
+  font-size: 150%;
+  font-weight: 700;
+  margin-bottom: 3%;
+}
+#title .icons {
+  position: relative;
+  margin-left: -3%;
+}
+.icon {
+  height: 30px;
 }
 section {
   min-height: 3em;
@@ -87,11 +122,29 @@ h2 {
   text-align: right;
   margin-right: 10%;
 }
+#contents img {
+  float: right;
+  width: 50%;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
 #ticket {
   background-color: #FCF5E4;
 }
 #concat {
   background-color: #FCF5E4;
+}
+.box {
+  display: inline-block;
+  border: 5px solid black;
+  padding: 1em;
+  text-align: left;
+  margin: 1em;
+}
+.box h3 {
+  clear: both;
+  font-size: 120%;
+  font-weight: 700;
 }
 footer {
   background-color: #4C9CB9;
@@ -101,7 +154,15 @@ footer {
 </head>
 <body>
 
-<img id=titleimg src="img/IMG_1923.JPG"><br>
+<div id=title>
+<img id=titleimg1 src="img/SHIRA_logo.png">
+<img id=titleimg2 src="img/IMG_1923.JPG">
+<div>
+  <div class="lead">SHIRAYAMA MUSIC VILLAGE 2021</div>
+  <div class="date">2021.8.28<small>(sat)</small>-29<small>(sun)</small></div>
+  <div class="icons"><img class=icon src="img/icon-instagram.png"><img class=icon src="img/icon-twitter.png"></div>
+</div>
+</div>
 
 <section id=head>
 <p class=big>
@@ -164,9 +225,31 @@ YATSUSUGI MUSIC VILLAGE 公式サイトリンク<br>
 
 <section id=timetable>
 <h2>TIME TABLE</h2>
+<div class=box>comming soon...</div>
 </section>
 
+<section id=contents>
+<h2>CONTENTS</h2>
+<div class=box>
+<h3>FOOD &amp; DRINK</h3>
+<img src="img/charcuterie-338498_1920.jpg">
+惣 so/ ジブン食堂 / 惣 so/ ジブン食堂 / 惣 so/ ジブン食堂 / 惣 so/ ジブン食堂 / 惣 so/ ジブン食堂 / 惣 so/ ジブン食堂 / 惣 so/ ジブン食堂 / 惣 so/ ジブン食堂 /
+<h3>MARCHE</h3>
+<img src="img/charcuterie-338498_1920.jpg">
+惣 so/ ジブン食堂 / 惣 so/ ジブン食堂 / 惣 so/ ジブン食堂 / 惣 so/ ジブン食堂 / 惣 so/ ジブン食堂 / 惣 so/ ジブン食堂 / 惣 so/ ジブン食堂 / 惣 so/ ジブン食堂 /
+</div>
+</section>
 
+<section id=areamap>
+<h2>AREA MAP</h2>
+<div class=box>comming soon...</div>
+</section>
+
+<section id=goods>
+<h2>GOODS</h2>
+<div class=box>comming soon...</div>
+</section>
+  
 <section id=access>
 <h2>ACCESS</h2>
 </section>
