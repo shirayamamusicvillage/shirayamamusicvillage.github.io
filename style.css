@@ -49,7 +49,7 @@ section {
   min-height: 3em;
   padding-bottom: .5em;
 }
-#head {
+#home {
   font-weight: 300;
   margin: 2em;
 }
@@ -139,4 +139,7 @@ h2 {
 footer {
   background-color: #4C9CB9;
   padding: 2em 0 1em 0;
+}
+a {
+  color: #4b4b4b; /* !important; */
 }
