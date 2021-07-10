@@ -19,9 +19,25 @@ const makeNav = () => {
 window.addEventListener("load", () => {
   makeNav();
 
+  const cr = (tag, parent) => {
+    const c = document.createElement(tag);
+    parent.appendChild(c);
+    return c;
+  }
+  const div = cr("div", document.body);
+  div.id = "menu_close";
+  div.className = "menu-close";
+  const div2 = cr("div", document.body);
+  div2.id = "menu_button";
+  div2.className = "menu-button";
+  for (let i = 0; i < 3; i++) {
+    cr("span", div2);
+  }
+  /*
   const html = `<div id="menu_close" class="menu-close"></div>
   <div id="menu_button" class="menu-button"><span></span><span></span><span></span></div>`;
   document.body.innerHTML += html;
+  */
 
   menu_button.onclick = () => {
     if (menu_button.classList.contains("menu-button-open")) {
