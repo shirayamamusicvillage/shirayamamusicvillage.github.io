@@ -185,6 +185,68 @@ h2 {
 #ticket {
   background-color: #FCF5E4;
 }
+#ticket > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#ticket > div > div {
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid black;
+  background-color: white;
+  margin: 1em .5em;
+  padding: 1em 1em;
+}
+@media (max-width:650px) { /* for smartphone */
+  #ticket > div > div {
+    width: 35%;
+  }
+}
+#ticket p {
+  margin: 0;
+}
+#ticket p:nth-child(2) {
+  font-size: 70%;
+  font-weight: 700;
+}
+#ticket p:nth-child(3) {
+  font-weight: 700;
+  font-size: 130%;
+}
+#ticket p:nth-child(4) {
+  font-weight: 700;
+  font-size: 160%;
+  margin: .2em 0 .5em 0;
+}
+#ticket p:nth-child(5) {
+  border: 1px solid black;
+  display: inline-block;
+  padding: .2em 1em .3em 1em;
+  font-weight: 700;
+  font-size: 100%;
+  margin: .5em;
+}
+#ticket p:nth-child(6) {
+  text-align: left;
+  display: block;
+  border-top: 1px solid gray;
+  padding: 1em 1em;
+  font-size: 60%;
+  margin: .5em;
+}
+#ticket h3 {
+  background-color: #2D6C9F;
+  display: inline-block;
+  color: white;
+  padding: 0.2em .5em;
+  font-size: 100%;
+  margin: 0 0 .6em 0;
+}
+#ticket .park {
+  background-color: #EE8531;
+}
 #contact {
   background-color: #FCF5E4;
   font-weight: 700;
