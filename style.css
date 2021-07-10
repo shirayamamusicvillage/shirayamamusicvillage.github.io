@@ -151,6 +151,37 @@ h2 {
   margin-left: 1em;
   margin-bottom: 1em;
 }
+#access > div {
+  background-color: #F9DC4A;
+  white-space: pre-wrap;
+  padding: 1em 2em 3em 2em;
+  margin: 1em 2em;
+  text-align: left;
+  font-weight: 700;
+  font-size: 90%;
+  line-height: 1.8;
+}
+#access h3 {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 0.2em .5em;
+  font-size: 100%;
+  margin: 0 0 .6em 0;
+}
+#access > div div {
+  margin: 0 0 0 1em;
+}
+#access b {
+  color: red;
+}
+#access #map {
+  margin: 0;
+  background-color: #ddd;
+  display: inline-block;
+  display: block;
+  height: 300px;
+}
 #ticket {
   background-color: #FCF5E4;
 }
