@@ -84,6 +84,26 @@ h2 {
   margin: .5em 0 .8em 0;
   text-shadow: 1px -1px 0px #222;
 }
+#safety .regist .triangle {
+  margin: .4em 0 0 .3em;
+  border-left: .4em solid white;
+  border-top: .4em solid transparent;
+  border-bottom: .4em solid transparent;
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+}
+#safety .guideline .triangle {
+  margin: .4em 0 0 .3em;
+  border-left: .4em solid red;
+  border-top: .4em solid transparent;
+  border-bottom: .4em solid transparent;
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+}
 #safety .regist .caption {
   text-align: left;
   font-size: 70%;
@@ -153,6 +173,7 @@ h2 {
 }
 #access > div {
   background-color: #F9DC4A;
+  word-break: break-all;
   white-space: pre-wrap;
   padding: 1em 2em 3em 2em;
   margin: 1em 2em;
@@ -198,6 +219,16 @@ h2 {
   background-color: white;
   margin: 1em .5em;
   padding: 1em 1em;
+}
+#ticket .triangle {
+  margin: .4em 0 0 .3em;
+  border-left: .4em solid black;
+  border-top: .4em solid transparent;
+  border-bottom: .4em solid transparent;
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
 }
 @media (max-width:650px) { /* for smartphone */
   #ticket > div > div {
