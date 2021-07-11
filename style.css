@@ -223,11 +223,6 @@ h2 {
   width: 0;
   height: 0;
 }
-@media (max-width:650px) { /* for smartphone */
-  #ticket > div > div {
-    width: 35%;
-  }
-}
 #ticket p {
   margin: 0;
 }
@@ -270,6 +265,13 @@ h2 {
 }
 #ticket .park {
   background-color: #EE8531;
+}
+@media (max-width:650px) { /* for smartphone */
+  #ticket > div > div {
+    width: 40%;
+    margin: .5em .5em;
+    padding: 1em .5em;
+  }
 }
 #contact {
   background-color: #FCF5E4;
