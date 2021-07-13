@@ -1,0 +1,45 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<style>
+body {
+  text-align: center;
+}
+body > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body > div > div {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  background-repeat: none;
+  background-size: cover;
+}
+a {
+  color: gray !important;
+}
+</style>
+<title>YATSUSUGI MUSIC VILLAGE フォトギャラリー</title>
+<body>
+<h1>YATSUSUGI MUSIC VILLAGE フォトギャラリー</h1>
+
+<div id="container"></div>
+
+<script type="module">
+import { add, create } from "https://js.sabae.cc/stdom.js";
+import { CSV } from "https://js.sabae.cc/CSV.js";
+
+onload = async () => {
+  const data = CSV.toJSON(await CSV.fetch("./list.csv"));
+  data.forEach((d) => {
+    const item = create("div");
+    item.style.backgroundImage = "url(" + d.photo + ")";
+    container.appendChild(item);
+  });
+};
+</script>
+
+<a href="../">back to home</a>
+
+</body>
+</html>
