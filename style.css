@@ -120,6 +120,10 @@ h2 {
   background-color: white;
   display: inline-block;
 }
+#safety .guideline a {
+  color: red !important;
+  text-decoration: none;
+}
 #safety .guideline2 {
   font-size: 70%;
   margin: .5em 0 2em 0;
