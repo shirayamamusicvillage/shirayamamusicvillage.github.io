@@ -3,7 +3,6 @@ html {
 }
 nav {
   display: block;
-  opacity: 1;
   position: fixed;
   right: -1200px;
   top: 0px;
@@ -58,7 +57,7 @@ nav li a:hover::before {
 @media (max-width:1048px) {
   nav {
     right: -280px;
-    opacity: 0;
+    display: none;
     text-align: right;
   }
   .nav-vertical {
@@ -71,7 +70,7 @@ nav li a:hover::before {
   }
   .nav-open {
     right: 0px;
-    opacity: 1;
+    display: block;
   }
   .menu-button {
     z-index: 999;
@@ -131,7 +130,7 @@ nav li a:hover::before {
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
     pointer-events: none;
-    opacity: 0;
+    display: none;
     visibility: hidden;
     transition:all 0.2s ease;
     z-index: -1;
@@ -139,7 +138,7 @@ nav li a:hover::before {
   .menu-close-active {
     pointer-events: auto;
     visibility: visible;
-    opacity: 1;
+    display: block;
     z-index: 990;
   }
 }
