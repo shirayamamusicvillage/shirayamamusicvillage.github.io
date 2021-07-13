@@ -1,7 +1,17 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+<link href="../font/Renner__Book/stylesheet.css" rel="stylesheet">
+
 <style>
 body {
   text-align: center;
+  font-family: "Quicksand", "Noto Sans JP", sans-serif;
+}
+h1 {
+  font-weight: 500;
 }
 /*
 body > div {
@@ -50,6 +60,7 @@ a {
   color: gray !important;
 }
 </style>
+
 <title>YATSUSUGI MUSIC VILLAGE フォトギャラリー</title>
 <body>
 <h1>YATSUSUGI MUSIC VILLAGE フォトギャラリー</h1>
@@ -57,13 +68,12 @@ a {
 <div id="container"></div><br>
 
 <script type="module">
-import { add, create } from "https://js.sabae.cc/stdom.js";
 import { CSV } from "https://js.sabae.cc/CSV.js";
 
 onload = async () => {
   const data = CSV.toJSON(await CSV.fetch("./list.csv"));
   data.forEach((d) => {
-    const item = create("div");
+    const item = document.createElement("div");
     item.style.backgroundImage = "url(" + d.photo + ")";
     container.appendChild(item);
   });
