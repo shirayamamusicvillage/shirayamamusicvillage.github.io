@@ -201,6 +201,9 @@ h2 {
 #access b {
   color: red;
 }
+#access > .bus {
+  width: 100%;
+}
 #ticket {
   background-color: #FCF5E4;
 }
