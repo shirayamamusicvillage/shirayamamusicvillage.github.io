@@ -221,6 +221,22 @@ h2 {
   margin: 1em .5em;
   padding: 1em 1em;
 }
+#ticket > div > .br:after {
+  background-color: red;
+  content: "<br>";
+  display: block;
+  width: 62%;
+  height: 0;
+}
+/*
+#ticket > div > div:nth-child(5) {
+  background-color: red;
+  content: "";
+  display: block;
+  margin-righ: 32%;
+  height: 0;
+}
+*/
 #ticket .triangle {
   margin: .4em 0 0 .3em;
   border-left: .4em solid black;
@@ -248,8 +264,9 @@ h2 {
   margin: .2em 0 .5em 0;
 }
 #ticket p:nth-child(5) {
+  x-display: inline-block;
+  display: none;
   border: 1px solid black;
-  display: inline-block;
   padding: .2em 1em .3em 1em;
   font-weight: 700;
   font-size: 100%;
@@ -273,6 +290,13 @@ h2 {
 }
 #ticket .park {
   background-color: #EE8531;
+}
+#ticket .ticketnotice {
+  font-weight: 700;
+}
+#ticket .ticketpia {
+  height: 3em;
+  margin: 1em;
 }
 @media (max-width:650px) { /* for smartphone */
   #ticket > div > div {
