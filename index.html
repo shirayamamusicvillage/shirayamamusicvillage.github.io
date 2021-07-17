@@ -13,6 +13,7 @@
 <script type="module" src="https://taisukef.github.io/aos-es/AOS.js"></script>
 <!-- main -->
 <link href="style.css" rel="stylesheet">
+<link href="style_popup.css" rel="stylesheet">
 
 <title>SHIRAYAMA MUSIC VILLAGE</title>
 </head>
@@ -70,44 +71,38 @@ SHIRAYAMA MUSIC VILLAGE 2021 とは?<br>
 <section id=artists data-aos="slide-left">
 <h2>ARTISTS</h2>
 <h3>8.28<small>sat</small></h3>
-<div-csv class=artists src="./csv/artists.csv" filter="date=08-28">
-  <div><img src="img/ADAM_at1.jpg"><div>ADAMat</div></div>
-  <div><img src="img/insisuto_1.jpg"><div>韻シスト</div></div>
-  <div><img src="img/Wool & The Pants.jpeg"><div>Wool &amp; Pants</div></div>
-  <div><img src="img/fox_capture_plan.jpeg"><div>el</div></div>
-  <div><img src="img/fox_capture_plan.jpeg"><div>粉川心＋MELRAW＋a</div></div>
-  <div><img src="img/jizue.jpeg"><div>jizue</div></div>
-  <div><img src="img/fox_capture_plan.jpeg"><div>Seiho</div></div>
-  <div><img src="img/fox_capture_plan.jpeg"><div>TASQ</div></div>
-  <div><img src="img/chipuruso.jpg"><div>チプルソ</div></div>
-  <div><img src="img/fox_capture_plan.jpeg"><div>DJ YASA</div></div>
-  <div><img src="img/fox_capture_plan.jpeg"><div>DUENDE</div></div>
-  <div><img src="img/DENIMS_A写_201225.jpg"><div>DENIMS</div></div>
-  <div><img src="img/fox_.jpg"><div>fox capture plan</div></div>
-  <div><img src="img/takesyou.jpeg"><div>福井県立武生商工高等学校吹奏楽部</div></div>
-  <div><img src="img/hey.jpg"><div>the hey song</div></div>
-  <div><img src="img/fox_capture_plan.jpeg"><div>THE BED ROOM TAPE</div></div>
-  <div><img src="img/fox_capture_plan.jpeg"><div>Ball head</div></div>
-  <div><img src="">img/MichaelKaneko_2020 2.jpg<div>Michael Kaneko</div></div>
+<script type="module" src="div-csv/div-csv.js"></script>
+<div-csv class=artists src="./csv/artists.csv" filter="date=2021-08-28">
 </div-csv>
 <div class=sorted>※50音順</div>
 
 <h3>8.29<small>sun</small></h3>
-<div class=artists>
-  <div><img src="img/oreskaband.jpg"><div>ORESKABAND</div></div>
-  <div><img src="img/Calmera15th.jpg"><div>Calmera</div></div>
-  <div><img src="img/KeishiTanaka2020.jpg"><div>Keishi Tanaka</div></div>
-  <div><img src="img/jabberloop.jpeg"><div>JABBERLOOP</div></div>
-  <div><img src="img/sozoroza.jpg"><div>sozoro座mode</div></div>
-  <div><img src="img/TRI4TH.jpeg"><div>TRI4TH</div></div>
-  <div><img src="img/nabowa.jpg"><div>NABOWA</div></div>
-  <div><img src="img/bonobos.jpg"><div>bonobos</div></div>
-  <div><img src="img/yoyo.jpg"><div>yoyo the pianoman</div></div>
-  <div><img src="img/Rim.JPG"><div>Rhim.</div></div>
+<div-csv class=artists src="./csv/artists.csv" filter="date=2021-08-29">
 </div>
 <div class=sorted>※50音順</div>
-  
+
 </section>
+
+<!-- popup -->
+<div class="popup" id="popup">
+  <div id="container">
+    <div id=closeicon class="close"></div>
+    <img src="img/ADAM_at1.jpg" data-src="image">
+    <div id="title" data-textcontent="name">fox capture plan</div>
+    <div class="links">
+      <a href=https://www.instagram.com/yatsusugi_music/ data-href=Instagram><img class=icon src="img/icon-instagram.png"></a>
+      <a href="https://twitter.com/YatsusugiMusic" data-href=Twitter><img class=icon src="img/icon-twitter.png"></a>
+      <a href="https://twitter.com/YatsusugiMusic" data-href=Facebook><img class=icon src="img/icon-facebook.png"></a>
+      <a href="https://" id="website" data-href=URL>OFFICIAL WEBSITE</a>
+    </div>
+    <div id="description" data-textcontent="description">現代版ジャズ・ロック”をコンセプトとした情熱的かつクールで新感覚なピアノ・トリオ・サウンドを目 指し、それぞれ違う個性を持つバンドで活動する 3 人が集まり 2011 年結成。過去 7 枚のフル・アルバム 、
+  CD ショップ大賞 ジャズ部門賞” など数々の賞を受賞。
+  FUJI ROCK FESTIVAL ’ 16 ” 、 2017 年 “ SUMMER SO NIC 2017 ”、 2018 年ブルーノート東京での単独 2DAYS 公 演を果たす他、3回に及ぶ中国ツアーなど海外公演も積極的に行っている。2019 年 11 月・ 12 月にはビルボ ードライブ東京・大阪、名古屋ブルーノートでの単独公演を敢行。楽曲制作では、 TBS ドラマ「カルテッ ト」を始め、ドラマ、アニメの劇伴音楽を担当。月 9 ドラマの劇場版「コンフィデンスマン JP プリンセス編」は大ヒット公開中 。その他 CM やゲームなど多方面へ楽曲を提供している。
+    </div>
+    <div id="close" class="close">CLOSE</div>
+  </div>
+</div>
+<!-- -->
 
 <section id=ticket data-aos="slide-left">
 <h2>TICKET</h2>

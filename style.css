@@ -45,6 +45,7 @@ body {
 }
 .icon {
   height: 30px;
+  padding: 0 5px;
 }
 section {
   min-height: 3em;

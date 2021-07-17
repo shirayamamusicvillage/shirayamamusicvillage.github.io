@@ -1,0 +1,113 @@
+.popup {
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .88);
+  z-index: 1000;
+  box-sizing: border-box;
+  color: #eee;
+  text-align: left;
+  font-weight: 700;
+  font-size: 88%;
+  line-height: 1.6;
+}
+.popup .close {
+  cursor: pointer;
+}
+.popup #container {
+  overflow-y: scroll;
+  height: 85vh;
+  padding: 10vh 5vw 5vh 5vw;
+}
+#closeicon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 40px;
+  padding-right: 50px;
+  margin-top: 0vh;
+  margin-right: 5vw;
+}
+#closeicon::before {
+  transform: rotate(45deg);
+}
+#closeicon::before, #closeicon::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+}
+#closeicon::after {
+  transform: rotate(-45deg);
+}
+.popup #title {
+  display: inline-block;
+  text-align: left;
+  padding: .2em .5em;
+  background-color: #F9DC4A;
+  color: #000;
+  font-size: 170%;
+  margin: 0;
+}
+.popup .links {
+  display: block;
+  padding: 1.5em 0 1em 0;
+}
+.popup .links img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  filter: invert(1);
+}
+.popup .links #website {
+  position: relative;
+  top: -9px;
+  border: 2px solid white;
+  color: white;
+  font-size: 80%;
+  border-radius: 10px;
+  margin: 0 0 0 5px;
+  padding: .5em;
+  text-align: center;
+  text-decoration: none;
+}
+.popup #container > img {
+  width: 40vw;
+  float: right;
+  padding-left: 2em;
+  padding-bottom: 1em;
+}
+.popup #description {
+  text-align: left;
+  white-space: pre-wrap;
+}
+.popup #close {
+  clear: both;
+  border: 2px solid #777;
+  color: #777;
+  border-radius: 10px;
+  margin: 2em 0 0 0;
+  padding: .5em;
+  text-align: center;
+}
+@media (max-width:650px) { /* for smartphone */
+  .popup #container > img {
+    width: 90vw;
+    float: none;
+    padding: 0;
+  }
+  .popup #title {
+    position: relative;
+    top: -1.7em;
+  }
+  .popup .links {
+    padding-top: 0;
+  }
+}
