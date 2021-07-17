@@ -170,6 +170,12 @@ h2 {
   text-align: right;
   margin-right: 10%;
 }
+@media (max-width:650px) { /* for smartphone */
+  .artists > div {
+    width: 30%;
+  }
+} 
+
 #contents img {
   float: right;
   width: 50%;
