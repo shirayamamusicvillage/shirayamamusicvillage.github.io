@@ -48,7 +48,6 @@ class DivCSV extends HTMLElement {
         }
       }
 
-      console.log(d);
       const div = cr("div");
       const img = new Image();
       img.src = d.image;
