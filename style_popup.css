@@ -19,20 +19,21 @@
 }
 .popup #container {
   overflow-y: scroll;
-  height: 85vh;
-  padding: 10vh 5vw 5vh 5vw;
+  height: 75vh;
+  padding: 10vh 5vw 15vh 5vw;
 }
 #closeicon {
+  x-background-color: red;
   position: fixed;
   top: 0;
   right: 0;
-  padding-top: 40px;
+  padding-top: 45px;
   padding-right: 50px;
-  margin-top: 0vh;
+  margin-top: 1vh;
   margin-right: 5vw;
 }
 #closeicon::before {
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(-15px, -15px);
 }
 #closeicon::before, #closeicon::after {
   content: "";
@@ -45,7 +46,7 @@
   transition: all 0.2s ease;
 }
 #closeicon::after {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(15px, -15px);
 }
 .popup #title {
   display: inline-block;
