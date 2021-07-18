@@ -60,9 +60,19 @@ class DivCSV extends HTMLElement {
       div.onclick = () => {
         setTemplate(popup, d);
         popup.style.display = "block";
+        container.scrollTop = 0;
+        // stop scroll
+        const bktop = window.scrollY
+        const lockscroll = (e) => {
+          window.scrollTo(0, bktop);
+        };
+        window.addEventListener("wheel", lockscroll);
+        
         popup.querySelectorAll(".close").forEach((c) => {
           c.onclick = () => {
             popup.style.display = "none";
+            // resume scroll
+            window.removeEventListener("wheel", lockscroll);
           };
         });
       };
