@@ -212,7 +212,7 @@ h2 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 50%;
+  width: 30%;  
 }
 #ticket {
   background-color: #FCF5E4;
