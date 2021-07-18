@@ -65,14 +65,17 @@ class DivCSV extends HTMLElement {
         const bktop = window.scrollY
         const lockscroll = (e) => {
           window.scrollTo(0, bktop);
+          //e.preventDefault();
         };
-        window.addEventListener("wheel", lockscroll);
+        window.addEventListener("wheel", lockscroll); // , { passive: false }) // 表も効かなくなる
+        window.addEventListener("touchmove", lockscroll); //, { passive: false });
         
         popup.querySelectorAll(".close").forEach((c) => {
           c.onclick = () => {
             popup.style.display = "none";
             // resume scroll
             window.removeEventListener("wheel", lockscroll);
+            window.removeEventListener("touchmove", lockscroll);
           };
         });
       };
