@@ -209,14 +209,8 @@ h2 {
   color: red;
 }
 #access > .bus {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  width:  100%;
 }
-#access > .bus  > .bus1 {
-  width: 40%;
-}
-
 #ticket {
   background-color: #FCF5E4;
 }
