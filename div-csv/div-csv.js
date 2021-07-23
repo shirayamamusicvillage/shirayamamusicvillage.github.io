@@ -10,15 +10,22 @@ const setTemplate = (comp, data) => {
     const att = atts[i];
     const name = att.name;
     const value = data[att.value];
+    //console.log(name, value);
     if (name.startsWith("data-textcontent")) {
       comp.textContent = value;
       if (!value && !comp.bkdisplay) {
         comp.bkdisplay = comp.style.display;
       }
-      comp.style.display = value ? comp.bkdisplay : "none";
+      //comp.style.display = value ? comp.bkdisplay : "none";
+      comp.style.display = value ? "inline" : "none";
     } else if (name.startsWith("data-")) {
       const name2 = name.substring(5);
       comp.setAttribute(name2, value);
+      if (!value && !comp.bkdisplay) {
+        comp.bkdisplay = comp.style.display;
+      }
+      //comp.style.display = value ? comp.bkdisplay : "none";
+      comp.style.display = value ? "inline" : "none";
     }
   }
   for (const c of comp.childNodes) {
