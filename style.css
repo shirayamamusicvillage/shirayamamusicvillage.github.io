@@ -173,7 +173,7 @@ h2 {
 }
 @media (max-width:650px) { /* for smartphone */
   .artists > div {
-    width: 30%;
+    width: 40%;
   }
 } 
 
