@@ -342,6 +342,9 @@ h2 {
   font-size: 120%;
   font-weight: 700;
 }
+#areamap >.map {
+  width:  80%;
+} 
 #attention {
   font-weight: 700;
 }
