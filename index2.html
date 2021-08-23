@@ -1,0 +1,285 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>SHIRAYAMA MUSIC VILLAGE</title>
+<!-- ogp -->
+<meta property="og:title" content="SHIRAYAMA MUSIC VILLAGE">
+<meta property="og:description" content="福井県・越前市に、2日限定で音楽に包まれる村をつくります。昨年「YATSUSUGI MUSIC VILLAGE」は皆様のお陰でコロナ禍の中無事開催できました。今年は「しあわせの里 越前しらやま」で規模を拡大して開催します。この2日間、自然・食・音楽に包まれる時間を共に過ごしましょう。">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<link rel="icon" type="image/png" href="./img/icon.png">
+<link rel="apple-touch-icon" href="./img/icon.png">
+<meta name="msapplication-square310x310logo" content="./img/icon.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image"  content="https://shirayamamusicvillage.github.io/img/smv-ogp.png">
+<meta name="twitter:image" content="https://shirayamamusicvillage.github.io/img/smv-ogp.png">
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+<link href="./font/Renner__Book/stylesheet.css" rel="stylesheet">
+<!-- nav -->
+<script type="module" src="nav/nav.js"></script>
+<link href="nav/nav.css" rel="stylesheet">
+<!-- map -->
+<script type="module" src="https://code4fukui.github.io/map-view/map-view.js"></script>
+<!-- aos -->
+<script type="module" src="https://taisukef.github.io/aos-es/AOS.js"></script>
+<!-- custum tag -->
+<script type="module" src="./div-csv/div-csv.js"></script>
+<!-- main -->
+<link href="style.css" rel="stylesheet">
+<link href="style_popup.css" rel="stylesheet">
+
+</head>
+<body>
+
+<section id=home>
+<h2 style="display:none">HOME</h2>
+
+<div id=title>
+<img id=titleimg1 src="img/SHIRA_logo.png">
+<img id=titleimg2 src="img/IMG_1923.JPG">
+<div>
+  <div class="lead">SHIRAYAMA MUSIC VILLAGE 2021</div>
+  <div class="date">2021.8.28<small>(sat)</small>-29<small>(sun)</small></div>
+  <div class="icons"><a href=https://www.instagram.com/shirayama_music/><img class=icon src="img/icon-instagram.png"></a><a href="https://twitter.com/ShirayamaMusic"><img class=icon src="img/icon-twitter.png"></a></div>
+</div>
+</div>
+
+<p class=big>
+今年も福井県・越前市に、<br>
+音楽に包まれる村をつくります。<br>
+</p>
+<br>
+福井県・越前市に、2日限定で音楽に包まれる村をつくります。<br>
+昨年「YATSUSUGI MUSIC VILLAGE」は皆様のお陰でコロナ禍の中無事開催できました。<br>
+今年は「しあわせの里 越前しらやま」で規模を拡大して開催します。<br>
+この2日間、自然・食・音楽に包まれる時間を共に過ごしましょう。<br>
+<br>
+表現者が地域に根ざし、今できることを持ち寄って何ができるのか?<br>
+地域、都市が繋がり、新たな出会いやきっかけを生む場になることを強く願います。<br>
+<br>
+<br>
+<a href=archive/>YATSUSUGI MUSIC VILLAGE フォトギャラリー</a><br>
+<br>
+<a href=https://yatsusugi.sub.jp/>YATSUSUGI MUSIC VILLAGE 公式サイトリンク</a><br>
+</section>
+
+<section id=latestnews data-aos="fade-up">
+<h2>LATEST NEWS</h2>
+チケット発売開始！！
+</section>
+
+<section id=safety data-aos="fade-up" r>
+<h2>SAFETY FOR ENJOYMENT</h2>
+<a href=https://forms.gle/4kW3fXtbd3mL63Ug9><div class=regist>
+  <div class=title>来場者向け個人情報登録フォーム<p class=triangle></p></div>
+  <div class=caption>来場受付にて個人情報登録完了メールを確認させて頂きます<br>
+    来場時の混雑を避けるため事前に個人情報登録フォームの送信をお願いいたします。</div>
+</div></a><br>
+<div class=guideline><a href=img/guidelines.pdf>新型コロナウイルス感染拡大防止ガイドライン</a><p class=triangle></p></div><br>
+<div class=guideline2>※ご来場前に必ずご確認ください</div>
+</section>
+
+<section id=artists data-aos="fade-up">
+<h2>ARTISTS</h2>
+<h3>10.30<small>sat</small></h3>
+<div-csv class=artists src="./csv/artists_enki.csv" filter="date=2021-10-30">
+</div-csv>
+<div class=sorted>※50音順</div>
+
+<h3>10.31<small>sun</small></h3>
+<div-csv class=artists src="./csv/artists_enki.csv" filter="date=2021-10-31">
+</div>
+<div class=sorted>※50音順</div>
+
+</section>
+
+<!-- popup -->
+<div class="popup" id="popup">
+  <div id="container">
+    <a id=closeicon class="close"></a>
+    <img src="img/ADAM_at1.jpg" data-src="image">
+    <div id="title" data-textcontent="name">fox capture plan</div>
+    <div class="links">
+      <a href=https://www.instagram.com/yatsusugi_music/ data-href=Instagram><img class=icon src="img/icon-instagram.png"></a>
+      <a href="https://twitter.com/YatsusugiMusic" data-href=Twitter><img class=icon src="img/icon-twitter.png"></a>
+      <a href="https://twitter.com/YatsusugiMusic" data-href=Facebook><img class=icon src="img/icon-facebook.png"></a>
+      <a href="https://" id="website" data-href=URL>OFFICIAL WEBSITE</a>
+    </div>
+    <div id="description" data-textcontent="description">現代版ジャズ・ロック”をコンセプトとした情熱的かつクールで新感覚なピアノ・トリオ・サウンドを目指し、それぞれ違う個性を持つバンドで活動する 3 人が集まり 2011 年結成。過去 7 枚のフル・アルバム 、
+  CD ショップ大賞 ジャズ部門賞” など数々の賞を受賞。2016年 “ FUJI ROCK FESTIVAL’16 ” 、 2017 年 “ SUMMER SO NIC 2017 ”、 2018 年ブルーノート東京での単独 2DAYS 公演を果たす他、3回に及ぶ中国ツアーなど海外公演も積極的に行っている。2019 年 11 月・ 12 月にはビルボ ードライブ東京・大阪、名古屋ブルーノートでの単独公演を敢行。楽曲制作では、 TBS ドラマ「カルテッ ト」を始め、ドラマ、アニメの劇伴音楽を担当。月 9 ドラマの劇場版「コンフィデンスマン JP プリンセス編」は大ヒット公開中 。その他 CM やゲームなど多方面へ楽曲を提供している。
+    </div>
+    <div id="close" class="close">CLOSE</div>
+  </div>
+</div>
+<!-- -->
+
+<section id=ticket data-aos="fade-up">
+<h2>TICKET</h2>
+<div>
+<div><h3>入場チケット</h3><p>キャンプも楽しめる</p><p>2日通し券</p><p>￥14,500</p><p>チケット購入<span class=triangle></span></span></p><p>※8月28日10時〜29日20時まで有効<br>※会場指定エリアにてキャンプ泊可能<br>※入場チケット代金にテントサイト代金も含まれています<br>※チケットはリストバンドと引き換えます<br>※小学生以下無料。中学生以上は入場チケットが必要です<br>※駐車場利用の場合、別途駐車券の購入が必要です<br>※再入場不可</p></div>
+<div><h3>入場チケット</h3><p>グループでお得</p><p>2日通し券 3名</p><p>￥40,500</p><p>チケット購入<span class=triangle></span></p><p>※1枚で3名入場可<br>※8月28日10時〜29日20時まで有効<br>※会場指定エリアにてキャンプ泊可能<br>※入場チケット代金にテントサイト代金も含まれています<br>※チケットはリストバンドと引き換えます<br>※小学生以下無料。中学生以上は入場チケットが必要です<br>※駐車場利用の場合、別途駐車券の購入が必要です<br>※再入場不可</p></div>
+<div><h3>入場チケット</h3><p>グループでお得</p><p>2日通し券 4名</p><p>￥52,000</p><p>チケット購入<span class=triangle></span></p><p>※1枚で4名入場可<br>※8月28日10時〜29日20時まで有効<br>※会場指定エリアにてキャンプ泊可能<br>※入場チケット代金にテントサイト代金も含まれています<br>※チケットはリストバンドと引き換えます<br>※小学生以下無料。中学生以上は入場チケットが必要です<br>※駐車場利用の場合、別途駐車券の購入が必要です<br>※再入場不可</p></div>
+<div><h3 class=park>駐車場チケット</h3><p>限定120台</p><p>会場駐車券(2日券用)</p><p>￥5,000</p><p>チケット購入<span class=triangle></span></p><p>※2日通し券限定<br>※8月28日10時〜29日20時まで有効(途中出入庫不可)<br>※駐車券は車1台につき1枚必要です<br>※現地スタッフの誘導に従って駐車ください<br>※駐車場所は先着順です<br>※場内駐車場は台数限定につきお早めのご購入をお勧めします<br>※車中泊はご遠慮ください</p></div>
+<div><h3 class=park>駐車場チケット</h3><p>シャトルバスで10分</p><p>場外駐車券(2日券用)</p><p>￥1,500</p><p>チケット購入<span class=triangle></span></p><p>※2日通し券購入者限定<br>※8月28日9時〜29日21時まで有効(途中出入庫不可)<br>※会場まで無料シャトルバス(片道10分)です<br>※シャトルバスの時間を確認の上ご利用ください<br>※大型の荷物は駐車前に会場荷物置き場に搬入できます(開場後)<br>※駐車券は車1台につき1枚必要です</p></div>
+</div><div>
+<div><h3>入場チケット</h3><p>日帰り</p><p>1日券(29日のみ)</p><p>￥7,000</p><p>チケット購入<span class=triangle></span></p><p>※8月29日10時〜29日20時まで有効<br>※29日日曜日のみのご利用です<br>※28日のみの1日券チケットはございません<br>※チケットはリストバンドと引き換えます<br>※小学生以下無料。中学生以上は入場チケットが必要です<br>※駐車場利用の場合、別途駐車券の購入が必要です<br>※再入場不可</p></div>
+<div><h3 class=park>駐車場チケット</h3><p>シャトルバスで10分</p><p>場外駐車券(1日券用)</p><p>￥1,000</p><p>チケット購入<span class=triangle></span></p><p>※1日券購入者用です<br>※8月29日9時〜21時まで有効(途中出入庫不可)<br>※会場まで無料シャトルバス(片道10分)です<br>※シャトルバスの時間を確認の上ご利用ください<br>※大型の荷物は駐車前に会場荷物置き場に搬入できます(開場後)<br>※駐車券は車1台につき1枚必要です</p></div>
+</div>
+<div class="ticketnotice">チケットの購入 ※購入必須</div>
+<div><a href="https://t.pia.jp/pia/event/event.do?eventCd=2120126"><img class="ticketpia" src="img/ticketpia_1.svg"></a></div>
+</section>
+
+<section id=timetable data-aos="fade-up" r>
+<h2>TIME TABLE</h2>
+<div class=box>coming soon...</div>
+</section>
+
+<section id=contents data-aos="fade-up">
+<h2>CONTENTS</h2>
+<div class=box>
+<h3>FOOD &amp; DRINK</h3>
+  <a href="https://www.instagram.com/so_sabaeekimae/">惣so </a>/ <a href="https://www.instagram.com/jibunshokudou/?hl=ja">ジブン食堂 </a> / <a href="https://echizentai.com/">ほやっ停 (山うにたこ焼き)</a> / <a href="https://nomcraft.beer/">Nomcraft Brewing（クラフトビール）</a> / <a href="http://hinobrewing.jp/">HINO BREWING（クラフトビール）</a> / <a href="https://www.instagram.com/curryphilosophy/">スパイスタリテマスカ？（スパイスカレー）</a> / <a href="https://www.instagram.com/taishiron_curry/">タイロンカレー（スパイスカレー）</a> / <a href="https://fujisyoten.storeinfo.jp/">富士書店（アルコール・キューバサンド）</a> / <a href="https://www.instagram.com/curry_chibinowa/">ちびのわcurry（スパイスカレー）</a> / <a href="https://www.instagram.com/livin_for_green/">livin for green（スパイスカレー）</a> /
+    <a href="https://www.instagram.com/omusubiya_asa/">おむすびや（おむすび）</a> /　<a href=”https://www.instagram.com/sunnyscraftworks/”>スパイスタリテマスカ？（クラフトコーラ）</a> / CARLOS
+<h3>MARCHE &amp; ACTIVITY</h3>
+<a href="https://www.instagram.com/treevalley_sabae/">tree valley sabae（植物</a>） / <a href="https://fujisyoten.storeinfo.jp/">富士書店（テントサウナ</a>） / <a href="https://synat.net/">Syn@〜</a> (スラックライン) / <a href="https://www.instagram.com/no414414/">Wilde Sunglasses</a>
+</div>
+</section>
+
+<section id=areamap data-aos="fade-up" r>
+<h2>AREA MAP</h2>
+<img class=map src="img/Areamap2.svg">
+</section>
+
+<section id=goods data-aos="fade-up">
+<h2>GOODS</h2>
+<div class=box>≈coming soon...</div>
+</section>
+  
+<section id=access data-aos="fade-up" r>
+<h2>ACCESS</h2>
+<div class=sec>
+<h3>会場住所</h3>
+みどりと自然の村
+福井県越前市安養寺町5−3
+<a href="https://code4fukui.github.io/vr-fukui/vr-view.html#img/vr-taiyonohiroba.jpg">会場をドローン撮影しました！</a>
+<a class=url href=https://www.city.echizen.lg.jp/office/090/040/sisetu/midoritosizennomura.html>https://www.city.echizen.lg.jp/office/090/040/sisetu/midoritosizennomura.html</a><br>
+&lt;車&gt; 武生 IC  車 30 分
+&lt;電車&gt; JR 武生駅 車 20 分
+<map-view name="会場：みどりと自然の村" latlng="35.9204741,136.0806084" zoom="11"></map-view>
+
+<h3>駐車場について</h3>
+■ 当日、会場での駐車券の販売はございません。<b>必ず事前にチケットのご購入をお願いいたします。</b>
+■ 駐車場は 2 種類ございます。
+<div>➀ 会場駐車場 120 台限定 
+<div>駐車場の場所により徒歩 3~5 分です。現地スタッフの指示に従ってください。
+駐車台数に限りがあるため、なるべくグループ同士で乗合せをお願いいたします。
+※お客様より多数のご要望をいただき検討した結果、下記の通り変更します。
+【会場駐車場ご利用時間】
+ 28 日 10 時 ~ 20 時
+ 29 日 9 時 30 分 ~ 20 時
+本イベントはしらやまの自然を満喫しながらキャンプを行い音楽を楽しむことを目的とした開催です。
+他宿泊希望のお客様にはご不便おかけすることもあるかと存じますが、何卒ご了承の程よろしくお願い申し上げます。
+ご利用時間内に車の出入庫を行う場合、同じ位置に駐車できない可能性があります。
+</div>
+➁ 場外駐車場 
+<div>会場まで車で約 10 分かかります。駐車場と会場間で無料シャトルバスをご用意します。
+バス乗車時に膝上に置けない大型テント等の荷物は、駐車前に会場入口の荷物置き場まで搬入いただけます。
+荷物置き場は開場後に利用できます。お荷物の紛失、破損の保証は致しかねます。
+安全上、駐車後の出入庫はお帰りまでご遠慮ください。
+※28日の会場から場外駐車場行きはございません。会場駐車場が満車になった場合検討いたします。
+【ご利用時間】
+2日通し券購入の方専用チケット/ 8 月 28 日 9 時 ~ 29 日 21 時まで有効
+1日券購入の方専用チケット/ 8 月 29 日 9 時 ~ 21 時まで有効
+駐車場住所 〒915-1204 福井県越前市都辺町36−84 越前市白山公民館
+</div></div>
+<h3>シャトルバスについて</h3>
+■ 場外駐車場からメイン会場まで片道約 10 分です。
+※ シャトルの運行スケジュールは、変更する場合がございます。<br>
+<img class="bus" src="img/bus3.svg">
+<h3>しあわせの里 越前しらやまとは？</h3>
+コウノトリの住む里地里山
+<a class=url href=http://www.echizen-shirayama.jp/about/>http://www.echizen-shirayama.jp/about</a>
+</section>
+
+<section id=contact data-aos="fade-up">
+<h2>CONTACT</h2>
+<div class=cap>ご不明点等ございましたら、下記までお問い合わせください。<br>
+また、メディアの方からのお問い合わせも下記からよろしくおねがいいたします。</div>
+<a href="https://forms.gle/Gbw7sMDiZV7sR5YW6"><div class=inquery>お問い合わせフォーム</div></a>
+</section>
+
+<section id=attention data-aos="fade-up" r>
+<h2>ATTENTION</h2>
+<div>注意事項について</div>
+<div class=box>
+<div class=sec>
+<h3>ご参加の皆様へ</h3>
+■ ご家族での参加大歓迎です。小さなお子様連れの方は保護者が責任を持って同行ください。必ず目を離さないようにお願いします。
+■ 小学生までのお子様は無料、中学生以上は有料です。
+■ ペットは同伴できません。
+■ 日中は天候により日差しが強くなります。熱中症に気をつけてしっかり水分補給をしてください。お酒の飲み過ぎにもご注意ください。
+■ 夜は冷え込みますので、風邪を引かぬよう防寒具を忘れずにお持ちください。
+■ 夜は足元が暗くなるため懐中電灯など灯をご持参ください。
+■ 基本飲食物を持ち込みいただけますが、ゴミは各自お持ち帰りください。
+■ 喫煙は専用エリアでお願いします。
+■ 会場入口からキャンプエリアまで若干距離があります。キャリーカー等ご用意ください。
+■ 車内泊はご遠慮ください。
+■ 会場時間よりも前に来られても待機場所はありません。交通渋滞を発生させる恐れがありますので必ず開場時間に合わせてご来場ください。
+</div>
+<div class=sec>
+<h3>キャンプサイトのご利用について</h3>
+■ ご利用は 8 月 28 日 10:00 ~ 29 日 20:00 までです。イベント終了後はすみやかにご退場願います。
+■ 車は指定の駐車場に駐車いただき、キャンプ宿泊となります。会場に車の乗り入れは出来ません。
+■ テントや寝具などキャンプ用品のご用意をお願いいたします。
+■ 施設内のバーベキュー場はご利用できません。BBQ用品は各自ご用意をお願いいたします。
+■ キャンプサイトエリアは区画は区切られておらず傾斜がる場所がございます。ゆずり合ってご利用ください。
+■ キャンプサイトは一部傾斜地もございます。あらかじめご了承ください。
+■ タープ、テントのガイロープはできるだけ短めでお願いいたします。
+■ ゴミは各自お持ち帰りください。
+■ 水場やトイレはみんなの場所です。次の方を思いキレイにご利用ください。
+■ 水場で BBQ や調理、食事で使った食器を洗う際は、残飯などの汚れを必ず拭き取ってからご利用ください。
+■ 小型発電機のお持ち込みは禁止しています。
+■ 直火禁止です。火を起こすときは必ずバーベキューコンロや焚火台をご使用ください。
+</div>
+<div class=sec>
+<h3>1日券で 29日ご来場のお客様へ</h3>
+■ 29 日開場は 10 時です。 
+■ 会場駐車場は 10 時からご利用いただけます。
+■ 場外駐車場は 9 時からご利用いただけます。
+</div>
+<div class=sec>
+<h3>注意事項</h3>
+■ 本イベントは雨天開催ですが、悪天候による出演時間の変更や出演者のキャンセル等に伴うチケットの払い戻しなどは致しませんので、ご了承ください。
+■ 主催者が運営などに支障をきたす、または来場者の安全確保が必要と判断した場合、その告知時期・方法に 関わらず、やむをえず運営上のルールを変更する場合がございます。
+■ 入場チケットを会場にてリストバンドと交換いたします。交換後はリストバンドが、お客様のチケット購入証明となります。リストバンドはお帰りになるまで絶対に外さないでください。
+■ 入場チケット・リストバンドの再発行はいかなる場合でも一切致しません。紛失した場合はご退場または再購入していただきますので、取り扱いには十分ご注意ください。
+■ チケットご購入後の変更・キャンセルは一切お受けできません。また、払い戻し対応もお受けできません。
+■ チケットのご購入は必ず各注意事項をご確認の上、お手続きいただくようお願いします。
+■ 過度の飲酒による泥酔には十分にご注意下さい。泥酔者は強制的に退場していただく場合もありますので十分にご注意ください。
+■ 不正入場が発覚した場合、理由の如何にかかわらず、身柄を警察に引き渡します。また、それに伴う損害賠償を請求します。
+■ 近隣の住民の迷惑になる行為は絶対におやめください。
+■ 会場内に花火等の火薬類、その他法律で禁止されている物の持ち込みを一切禁止します。
+■ 会場および駐車場内・外で発生した事故、盗難等は主催者・会場・出演者は一切責任を負いません。
+■ 会場内・外において、係員の指示に従われない方、また、泥酔・危険行為など他の方の迷惑になる行為をされる場合には強制的に退場していただきます。その際のチケットの払い戻しは一切行ないませんので予めご注意ください。
+■ 会場内にカメラ・ビデオカメラ等持込みは可能ですが、出演アーティストの撮影は禁止です。また、公演の録音を目的とする機器の場内への持込みは一切禁止です。
+■ サバイバルゲームや類似する行為はお断りいたします。また、ドローンなどの空中にて動かすラジコンなどについても使用は禁止です。
+■ 喫煙は必ず所定の場所でお願いします。
+■ ゴミのポイ捨てはお止めください。ゴミは必ず各自持ち帰ってください。
+■ 会場内はすべてのエリアで直火禁止です。バーベキューコンロや焚火台をご使用ください。
+■ 本イベントでは撮影された写真や映像が WEB などに単発・継続的に使用されることがありますので、ご了承ください。
+</div>
+</div>
+</section>
+
+<footer>
+<div class=social>
+<div class=official>OFFICIAL</div>
+<div class="icons"><a href="https://www.instagram.com/shirayama_music/"><img class=icon src="img/icon-instagram.png"></a><a href="https://twitter.com/ShirayamaMusic"><img class=icon src="img/icon-twitter.png"></a></div>
+</div>
+
+<div class=footer>©SHIRAYAMA MUSIC VILLAGE</div>
+</footer>
+  
+</body>
+</html>
