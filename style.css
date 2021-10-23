@@ -345,6 +345,11 @@ h2 {
 #areamap >.map {
   width:  80%;
 } 
+}
+#goods >.goods {
+  width:  80%;
+} 
+
 #attention {
   font-weight: 700;
 }
