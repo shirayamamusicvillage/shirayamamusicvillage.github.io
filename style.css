@@ -342,10 +342,15 @@ h2 {
   font-size: 120%;
   font-weight: 700;
 }
+
+#timetable >.timetable {
+  width:  80%;
+} 
+
 #areamap >.map {
   width:  80%;
 } 
-}
+
 #goods >.goods {
   width:  60%;
 } 
